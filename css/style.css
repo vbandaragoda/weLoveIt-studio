@@ -664,10 +664,6 @@ footer {
     font-size: 14px;
 }
 
-.flogo{
-    
-    
-}
 
 .address{
     text-decoration: none;
@@ -722,7 +718,7 @@ padding-top: 7px;
 
     #hero .hero-section{
     width: 100%;
-    height: 51vh;
+    height: 66vh;
     background-image: url(../img/hero-img.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -809,7 +805,22 @@ padding-top: 7px;
     .what-container{
         display: flex;
         flex-direction: row;
-        margin-top: -565px;
+        margin-top: -490px;
+    }
+
+    #what-we-do .what-back {
+        margin-top: -89px;
+        z-index: 10;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/what-section.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        opacity: 50%;
     }
 
     .what-img-child{
@@ -978,7 +989,7 @@ padding-top: 7px;
         margin-top: 30px;
         margin-bottom: 50px;
         width: 100%;
-        height: 92vh;
+        height: 120vh;
         background-image: url(../img/projects-img.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -998,7 +1009,7 @@ padding-top: 7px;
     }
 
     .pro-container {
-        margin-top: -720px;
+        margin-top: -726px;
         position: relative;
         margin-bottom: 100px;
         display: flex;
@@ -1472,4 +1483,119 @@ padding-top: 7px;
 
     }
 
+}
+
+
+@media (max-width: 375px) {
+
+    #hero {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .container {
+        margin: 0px 20px 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #001763;
+        margin: 6px 0;
+    }
+    .nav-nav ul{
+       
+    }
+    .bars{
+        display: none;
+    }
+    .nav-nav{
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        /* width: 100vh; */
+    }
+    
+    .hero-text {
+        margin-left: 30px;
+        margin-right: 20px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .hero-section .hero-heading {
+        color: #ffffff;
+        font-size: 33px;
+        line-height: 43px;
+        padding-bottom: 23px;
+    }
+
+    .hero-section .hero-desc {
+        color: #ffffff;
+        margin-bottom: 40px;
+        font-size: 12px;
+    }
+
+    .hero-section .hero-btn {
+        background: #45A2DC;
+        padding: 14px 59px;
+        border-radius: 32px;
+        color: #ffffff;
+        font-weight: 500;
+    }
+
+    #hero .hero-section {
+        width: 100%;
+        height: 87vh;
+        background-image: url(../img/hero-img.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-section .featureImage img {
+        display: none;
+    }
+
+
+    .hero-section .featureImageMobile img {
+        display: flex;
+        position: relative;
+        width: 360px;
+        height: auto;
+        margin-top: 0px;
+    }
+
+
+
+    #what-we-do{
+        display: none;
+    }
+
+    #vote-teachers{
+        display: none;
+    }
+
+    #projects{
+        display: none;
+    }
+    #donate{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
 }
